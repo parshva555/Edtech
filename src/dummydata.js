@@ -129,7 +129,7 @@ export const team = [
     ig:"https://www.instagram.com/_.krisshhaa._/"
   },
   {
-    cover: "./images/team/prashistha.webp",
+    cover: "https://avatars.githubusercontent.com/u/109412601?v=4",
     name: "Prashistha Priyadarshini",
     work: "Intern at Khushiyaan Foundation and Student of Symbiosis Institute of Technology",
     ig:"https://instagram.com/prashistha/"
