@@ -4,7 +4,10 @@ import "./contact.css"
 import axios from "axios";
 
 const Contact = () => {
-  const map = 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d904726.6131739549!2d85.24565535!3d27.65273865!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2snp!4v1652535615693!5m2!1sen!2snp" width="300" height=300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" '
+const map = 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48268.71758134831!2d72.959591!3d19.2565626!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1652535615693!5m2!1sen!2sin" width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"'
+
+
+  
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -43,7 +46,7 @@ const Contact = () => {
       <section className='contacts padding'>
         <div className='container shadow flex'>
           <div className='left row'>
-            <iframe src={map}></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.348132883469!2d72.99238177490818!3d19.223653747321205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7bf8698d42afb%3A0x35be78f0704b5c65!2sAnanta%20Khushiyaan%20Ashram!5e0!3m2!1sen!2sin!4v1698474494490!5m2!1sen!2sin" style={{width:"550px", height:"1000px"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
           </div>
           <div className='right'>
             <h1>Contact us</h1>
@@ -71,10 +74,10 @@ const Contact = () => {
                 <input type='email' placeholder='Email' onChange={handleEmail}/>
               </div>
               <input type='text' placeholder='Subject' onChange={handleSubject}/>
-              <textarea cols='30' rows='10' onChange={handleMessage}>
-                Create a message here...
+              <textarea cols='30' rows='10' onChange={handleMessage} placeholder="Create a message here...">
+                
               </textarea>
-              <button className='primary-btn'>SEND MESSAGE</button>
+              <button className='primary-btn' onClick={handleSubmit}>SEND MESSAGE</button>
             </form>
 
             <h3>Follow us here</h3>

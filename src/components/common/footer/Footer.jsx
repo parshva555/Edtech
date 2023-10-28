@@ -20,8 +20,7 @@ const Footer = () => {
       <footer>
         <div className='container padding'>
           <div className='box logo'>
-            <h1>KHUSHIYAAN FOUNDATION</h1>
-            <span>ONLINE EDUCATION & LEARNING</span>
+              <img src="http://khushiyaanfoundation.org/images/khushiyaanfoundation.jpg" alt="khushiyaan foundation logos" style={{height:"75px",width:"175px"}}/>
             <p>Reach Us Out at</p>
             
             
@@ -46,17 +45,16 @@ const Footer = () => {
           <div className='box last'>
             <h3>Have a Questions?</h3>
             <ul>
-              <li>
+              <li style={{width:"300px"}}>
                 <i className='fa fa-map'></i>
-                GB 21, High Street Mall, Kapurbawdi, Thane, Maharashtra 400607
+                &nbsp;Balkum pada no 1, near gazal hotel, next to Anabolic Gym, near Yashraj Villa, bhoirwadi, Balkum, Thane west. 
               </li>
               <li>
-                <i className='fa fa-phone-alt'></i>
-                097691 81218
+                <i className='fa fa-phone-alt'>&nbsp;&nbsp;09769181218</i>
               </li>
               <li>
-                <i className='fa fa-paper-plane'></i>
-                support@khushiyaanfoundation.org
+                <i className='fa fa-paper-plane'><a href="mailto:support@khushiyaanfoundation.org">&nbsp;&nbsp;support@khushiyaanfoundation.org</a></i>
+                
               </li>
             </ul>
           </div>

@@ -3,7 +3,7 @@ import Heading from "../../common/heading/Heading"
 import "./Hero.css"
 import { useState } from "react"
 import { Route, Switch } from "react-router-dom";
-
+import {Link} from 'react-router-dom'
 const Hero = () => {
 
   return (
