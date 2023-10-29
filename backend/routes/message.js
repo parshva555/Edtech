@@ -4,7 +4,6 @@ const User = require('../models/User')
 router.post('/sendmessage', async (req, res) => {
     try {
       const { name, email, subject, message } = req.body;
-  
       const newUser = new User({
         name,
         email,
