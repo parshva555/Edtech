@@ -1,6 +1,7 @@
 import React from "react"
 import "./courses.css"
 import { coursesCard } from "../../dummydata"
+import { HiArrowNarrowDown } from "react-icons/hi";
 
 const CoursesCard = () => {
   return (
@@ -44,10 +45,9 @@ const CoursesCard = () => {
               </div>
               <div className='price'>
                 <h3>
-                  {val.priceAll}  {val.pricePer}
+                  {val.priceAll} <HiArrowNarrowDown />
                 </h3>
               </div>
-              <button className='outline-btn'>VIEW NOTES</button>
             </div>
           ))}
         </div>

@@ -55,7 +55,7 @@ const map = 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48268.7175813
             <div className='items grid-row'>
               <div className='box '>
                 <h4>ADDRESS:</h4>
-                <p>GB 21, High Street Mall, Kapurbawdi, Thane, Maharashtra 400607</p>
+                <p>Balkum pada no 1, near gazal hotel, next to Anabolic Gym, near Yashraj Villa, bhoirwadi, Balkum, Thane west.</p>
                 <br />
               </div>
               <div className='box'>

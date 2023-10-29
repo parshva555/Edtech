@@ -3,7 +3,8 @@ import OnlineCourses from "../allcourses/OnlineCourses"
 import Heading from "../common/heading/Heading"
 import "../allcourses/courses.css"
 import { coursesCard } from "../../dummydata"
-
+import { Link } from "react-router-dom/cjs/react-router-dom.min"
+import { HiArrowNarrowDown } from "react-icons/hi";
 const HAbout = () => {
   return (
     <>
@@ -51,10 +52,12 @@ const HAbout = () => {
                   </div>
                   <div className='price'>
                     <h3>
-                      {val.priceAll}  {val.pricePer}
+                      {val.priceAll}  <HiArrowNarrowDown/>
                     </h3>
                   </div>
+                  <Link to='/courses'>
                   <button className='outline-btn'>VIEW NOTES</button>
+                  </Link>
                 </div>
               ))}
             </div>

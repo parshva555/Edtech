@@ -1,19 +1,35 @@
 import React from "react"
 import { blog } from "../../../dummydata"
 import "./footer.css"
-
+import { useState } from "react";
+import axios from 'axios';
 const Footer = () => {
+  const [email, setEmail] = useState("");
+  const handleEmail = (event) => {
+    setEmail(event.target.value);
+  }
+  const handleSubmit = async (event) => {
+    event.preventDefault();
+    try {
+      const response = await axios.post("/send/email", {
+        email: email,
+      });
+      console.log(response.message);
+    } catch (error) {
+      console.log(error);
+    }
+  }
   return (
     <>
       <section className='newletter'>
         <div className='container flexSB'>
           <div className='left row'>
-            <h1>Contact us at support@khushiyaanfoundation.or </h1>
+            <h1>Contact us at support@khushiyaanfoundation.org </h1>
             <span>Far far away, behind the word mountains</span>
           </div>
           <div className='right row'>
-            <input type='text' placeholder='Enter email address' />
-            <i className='fa fa-paper-plane'></i>
+            <input type='text' placeholder='Enter email address' onChange={handleEmail} />
+            <i className='fa fa-paper-plane' onClick={handleSubmit} style={{width:"40px"}}></i>
           </div>
         </div>
       </section>

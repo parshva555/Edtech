@@ -7,7 +7,7 @@ const TeamCard = () => {
       {team.map((val) => (
         <div className='items shadow'>
           <div className='img '>
-            <img src={val.cover} alt='' style={{ height: '350px', width: '300px' }}/>
+            <img src={val.cover} alt='' style={{ height: '350px', width: '320px' }}/>
             <div className='overlay'>
               <a href={val.ig}><i className='fab fa-instagram icon'></i></a>
           
