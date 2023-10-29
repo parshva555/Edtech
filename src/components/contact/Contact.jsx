@@ -26,9 +26,10 @@ const map = 'https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d48268.7175813
     setMessage(event.target.value);
   }
 
-  const handleSubmit = async () => {
+  const handleSubmit = async (event) => {
+    event.preventDefault();
     try {
-      const response = await axios.post("/sendmessage", {
+      const response = await axios.post("/send/sendmessage", {
         email: email,
         name: name,
         subject: subject,
